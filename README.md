@@ -7,13 +7,6 @@ We propose a new method, called curvature similarity extractor (CSE), for improv
 
 ## Environment
 
-Our curvature similarity extractor is an add-on component for advanced matchers. Here we consider the [QuadTree](https://github.com/Tangshitao/QuadTreeAttention) as the matcher and [DPT](https://github.com/isl-org/DPT) for the depth estimation. Please consider setup the [QuadTree](https://github.com/Tangshitao/QuadTreeAttention) environment with the following commands:
-
-```
-git clone git@github.com:Tangshitao/QuadTreeAttention.git
-cd QuadTreeAttention&&python setup.py install
-```
-
 Download our CSE module and setup the environment with the following commands.
 
 ```
@@ -22,6 +15,20 @@ git clone git@github.com:AaltoVision/surface-curvature-estimator.git
 cd surface-curvature-estimator
 conda env create -f environment.yaml
 conda activate 
+```
+
+```
+pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+pip install pytorch-lightning==1.3.8
+pip install torchmetrics==0.3.2
+```
+Then install QuadTreeAttention as follows:
+
+Our curvature similarity extractor is an add-on component for advanced matchers. Here we consider the [QuadTree](https://github.com/Tangshitao/QuadTreeAttention) as the matcher and [DPT](https://github.com/isl-org/DPT) for the depth estimation. Please consider setup the [QuadTree](https://github.com/Tangshitao/QuadTreeAttention) environment with the following commands:
+
+```
+git clone git@github.com:Tangshitao/QuadTreeAttention.git
+cd QuadTreeAttention&&python setup.py install
 ```
 
 ## Dataset
